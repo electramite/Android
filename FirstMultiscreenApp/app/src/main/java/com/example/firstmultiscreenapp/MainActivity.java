@@ -18,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void openActivity(View view){
-        Toast.makeText(this, "This is toast", Toast.LENGTH_SHORT).show();
+
         Intent intent = new Intent(this, MainActivity2.class);
         name = findViewById(R.id.name);
+        Toast.makeText(this, "Surprise !!!", Toast.LENGTH_SHORT).show();
         String myName = name.getText().toString();
         intent.putExtra(EXTRA_NAME, myName);
         startActivity(intent);
