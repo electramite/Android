@@ -16,6 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         Intent intent = getIntent();
         String name = intent.getStringExtra(MainActivity.EXTRA_NAME);
-        textView.setText("Your Name is: "+ name);
+        //textView.setText("Your Name is: "+ name);
+        textView.setText("F**k u "+ name+" Lawdi");
     }
 }
