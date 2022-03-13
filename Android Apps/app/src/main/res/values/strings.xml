@@ -11,7 +11,7 @@
     <string name="test_question5">A group of swans is known as a bevy?</string>
     <string name="test_question6">Sydney is the capital of Australia?</string>
     <string name="test_question7">The Penny Black is an old-fashioned coin?</string>
-    <string name="test_question8">Glastonbury had been due to celebrate its 50th anniversary in June before the festival was cancelled? T</string>
-    <string name="test_question9">The star sign Capricorn is represented by a goat? T</string>
-    <string name="test_question10">The Penny Black is the name of a valuable old coin? F</string>
+    <string name="test_question8">Glastonbury had been due to celebrate its 50th anniversary in June before the festival was cancelled?</string>
+    <string name="test_question9">The star sign Capricorn is represented by a goat?</string>
+    <string name="test_question10">The Penny Black is the name of a valuable old coin?</string>
 </resources>
