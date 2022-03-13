@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="test_question">Prince Harry is taller than Prince William ?</string>
+    <string name="true_text">True</string>
+    <string name="false_text">False</string>
+    <string name="correct_ans">That\'s Correct</string>
+    <string name="incorrect_ans">That\'s Incorrect</string>
+    <string name="test_question1">Prince Harry is taller than Prince William ?</string>
+    <string name="test_question2">The five rings on the Olympic flag are interlocking?</string>
+    <string name="test_question3">Mount Kilimanjaro is the highest mountain in the world?</string>
+    <string name="test_question4">Strictly Come Dancing first aired in the UK in 2005?</string>
+    <string name="test_question5">A group of swans is known as a bevy?</string>
+    <string name="test_question6">Sydney is the capital of Australia?</string>
+    <string name="test_question7">The Penny Black is an old-fashioned coin?</string>
+    <string name="test_question8">Glastonbury had been due to celebrate its 50th anniversary in June before the festival was cancelled? T</string>
+    <string name="test_question9">The star sign Capricorn is represented by a goat? T</string>
+    <string name="test_question10">The Penny Black is the name of a valuable old coin? F</string>
 </resources>

@@ -13,6 +13,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button trueButton;
     private TextView question;
 
+    private Questions[] questionBank = new Questions[] {
+            new Questions(R.string.test_question1, false),
+            new Questions(R.string.test_question2, true),
+            new Questions(R.string.test_question3, false),
+            new Questions(R.string.test_question4, false),
+            new Questions(R.string.test_question5, true),
+            new Questions(R.string.test_question6, false),
+            new Questions(R.string.test_question7, false),
+            new Questions(R.string.test_question8, true),
+            new Questions(R.string.test_question9, true),
+            new Questions(R.string.test_question10, false)
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
