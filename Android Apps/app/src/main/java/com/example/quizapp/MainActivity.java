@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button trueButton;
     private TextView question;
     private ImageButton nextButton;
+    private ImageButton prevButton;
     private int qId = 0;
 
     private Questions[] questionBank = new Questions[] {
@@ -33,13 +34,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         nextButton = findViewById(R.id.next_text);
         falseButton = findViewById(R.id.false_button);
         trueButton = findViewById(R.id.true_button);
         question = findViewById(R.id.answer_text_view);
+        prevButton = findViewById(R.id.prev_text);
+
         falseButton.setOnClickListener(this);
         trueButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
+        prevButton.setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +60,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Go on next question
                 qId = (qId+1)%questionBank.length;
                 question.setText(questionBank[qId].getAnswerResId());
+                break;
+            case R.id.prev_text:
+                //Go on next question
+                qId--;
+                if(qId==-1){
+                    qId=questionBank.length-1;
+                }
+                question.setText(questionBank[qId].getAnswerResId());
+                break;
                 
         }
 
