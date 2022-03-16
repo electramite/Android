@@ -26,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         t = findViewById(R.id.text);
 
-        RequestQueue myRequest;
-        myRequest = Volley.newRequestQueue(this);
+       // RequestQueue myRequest;
+        //myRequest = Volley.newRequestQueue(this);
+        RequestQueue queue;
+        queue = MySingleton.getInstance(this.getApplicationContext()).getRequestQueue();
 
         JsonObjectRequest reply = new JsonObjectRequest(Request.Method.GET, "https://jsonplaceholder.typicode.com/todos/1", null, new Response.Listener<JSONObject>() {
             @Override
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("electramite", "error occured while hitting API");
             }
         });
-        myRequest.add(reply);
+        //myRequest.add(reply);
+        MySingleton.getInstance(this).addToRequestQueue(reply);
     }
 }
