@@ -27,7 +27,8 @@
         style="@style/CategoryStyle"
         android:background="@color/category_numbers"
         android:text="@string/category_numbers"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="OnClick,TextContrastCheck"
+        android:onClick="openNumbersList"/>
 
     <TextView
         android:id="@+id/family"
