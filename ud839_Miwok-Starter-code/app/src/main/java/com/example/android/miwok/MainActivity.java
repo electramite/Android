@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+       // String[] myNames = new String[20];
     }
     public void openNumbersList(View view){
         Intent intent = new Intent(MainActivity.this, NumbersActivity.class);
