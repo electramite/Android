@@ -2,6 +2,7 @@ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,8 +24,18 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                String contact = editText.getText().toString();
+                SharedPreferences data = getSharedPreferences("contacts", MODE_PRIVATE);
+                SharedPreferences.Editor editor = data.edit();
+               // editor.putString("key", "value");
+                editor.putString("key", contact);
+                editor.apply();
+                textView.setText(contact);
             }
         });
+        // when app will restart
+        SharedPreferences storeddata = getSharedPreferences("contacts", MODE_PRIVATE);
+        String saved_contact = storeddata.getString("key", "if key is not found");
+        textView.setText(saved_contact);
     }
 }
