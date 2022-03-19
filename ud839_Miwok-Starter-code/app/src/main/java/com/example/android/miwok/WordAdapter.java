@@ -9,15 +9,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.List;
+
 public class WordAdapter extends ArrayAdapter<Word>{
-    public WordAdapter(@NonNull Context context, int resource) {
-        super(context, resource);
-    }
-
-    @NonNull
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
-
-        return super.getView(position, convertView, parent);
+    public WordAdapter(@NonNull Context context, @NonNull List<Word> objects) {
+        super(context, resource, objects);
     }
 }
