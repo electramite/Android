@@ -35,4 +35,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, NumbersActivity.class);
         startActivity(intent);
     }
+    public void opencolorsList(View view){
+        Intent intent = new Intent(MainActivity.this, ColorsActivity.class);
+        startActivity(intent);
+    }
 }
