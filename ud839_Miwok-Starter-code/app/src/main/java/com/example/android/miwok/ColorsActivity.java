@@ -18,9 +18,9 @@ public class ColorsActivity extends AppCompatActivity {
         colors.add(new Word("green", "chokokki"));
         colors.add(new Word("brown", "ṭakaakki"));
         colors.add(new Word("gray", "ṭopoppi"));
-        colors.add(new Word("five", "massokka"));
-        colors.add(new Word("six", "temmokka"));
-        colors.add(new Word("seven", "kenekaku"));
+        colors.add(new Word("black", "kululli"));
+        colors.add(new Word("white", "kelelli"));
+        colors.add(new Word("dusty yellow", "ṭopiisә"));
         colors.add(new Word("eight", "kawinta"));
         colors.add(new Word("nine", "wo’e"));
         colors.add(new Word("ten", "na’aacha"));
