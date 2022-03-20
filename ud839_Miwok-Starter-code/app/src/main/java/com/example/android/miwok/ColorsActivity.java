@@ -22,11 +22,10 @@ public class ColorsActivity extends AppCompatActivity {
         colors.add(new Word("white", "kelelli"));
         colors.add(new Word("dusty yellow", "ṭopiisә"));
         colors.add(new Word("mustard yellow", "chiwiiṭә"));
-        colors.add(new Word("nine", "wo’e"));
-        colors.add(new Word("ten", "na’aacha"));
 
-        WordAdapter adapter = new WordAdapter(this, colors);
+
+        WordAdapter color_adapter = new WordAdapter(this, colors);
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
+        listView.setAdapter(color_adapter);
     }
 }
