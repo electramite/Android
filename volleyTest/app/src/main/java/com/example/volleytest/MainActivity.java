@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
 
     TextView t;
-
+    String url = "https://hackaday.com/blog/feed/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
         RequestQueue queue;
         queue = MySingleton.getInstance(this.getApplicationContext()).getRequestQueue();
 
-        JsonObjectRequest reply = new JsonObjectRequest(Request.Method.GET, "https://jsonplaceholder.typicode.com/todos/1", null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest reply = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
                     Log.d("electramite", "Response: " + response.getString("title"));
-                    t.setText(response.getString("title"));
+                    //t.setText(response.getString("title"));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

@@ -34,7 +34,8 @@
         android:id="@+id/family"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
-        android:text="@string/category_family" />
+        android:text="@string/category_family"
+        android:onClick="openFamilyList"/>
 
     <TextView
         android:id="@+id/colors"
@@ -49,6 +50,7 @@
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
         android:text="@string/category_phrases"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:onClick="openPhraseList"/>
 
 </LinearLayout>

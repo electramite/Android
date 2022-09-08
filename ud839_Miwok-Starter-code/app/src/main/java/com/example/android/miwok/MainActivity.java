@@ -32,11 +32,19 @@ public class MainActivity extends AppCompatActivity {
        // String[] myNames = new String[20];
     }
     public void openNumbersList(View view){
-        Intent intent = new Intent(MainActivity.this, NumbersActivity.class);
-        startActivity(intent);
+        Intent intent_numbers = new Intent(MainActivity.this, NumbersActivity.class);
+        startActivity(intent_numbers);
     }
     public void openColorsList(View view){
         Intent intent_colors = new Intent(MainActivity.this, ColorsActivity.class);
         startActivity(intent_colors);
+    }
+    public void openFamilyList(View view){
+        Intent intent_family = new Intent(MainActivity.this, FamilyActivity.class);
+        startActivity(intent_family);
+    }
+    public void openPhraseList(View view){
+        Intent intent_phrases = new Intent(MainActivity.this, PhrasesActivity.class);
+        startActivity(intent_phrases);
     }
 }
